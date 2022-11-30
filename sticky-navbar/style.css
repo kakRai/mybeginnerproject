@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+:root {
+	--body-font: 'Paytone One', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: var(--body-font);
+}
+
+.nav_bar {
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1rem;
+	align-items: center;
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 .5rem .5rem rgba(0,0,0,.4);
+}
+
+.nav_bar a {
+	text-decoration: none;
+}
+
+.nav_bar ul {
+	display: flex;
+}
+
+.nav_bar ul li {
+	list-style: none;
+}
+
+h1 {
+	color: #000;
+	cursor: pointer;
+}
+
+h1:hover {
+	color: blue;
+}
+
+.nav_link {
+	text-decoration: none;
+	margin: 0 1rem;
+	color: #000;
+}
+
+.nav_link:hover {
+	color: blue;
+}
+
+.top_container {
+	background: url("https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");
+	height: 200px;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.top_container h2 {
+	color: #fff;
+	font-size: 3rem;
+}
+
+.bottom_container {
+	margin: 1rem;
+}
+
+.nav_bar.active {
+	background-color: #000;
+}
+
+.active .nav_link,
+.active a h1 {
+	color: #fff;
+}
+
+.active .nav_link:hover,
+.active a h1:hover {
+	color: blue;
+}
